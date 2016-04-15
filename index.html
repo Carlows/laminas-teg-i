@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>TEG I - Carlos Martinez</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+      .reveal section img {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+      }
+
+      #necesidad {
+        margin-top: 50px;
+      }
+
+      .reveal section .text-left {
+        text-align: left;
+      } 
+
+      .reveal section .text-right {
+        text-align: right;
+      } 
+
+      .reveal section .justify {
+        text-indent: 50px;
+        text-align: justify;
+      } 
+
+      .reveal section .justify-li {
+        text-align: justify;
+      }
+
+      .reveal section .highlight {
+        color: yellow;
+      }
+
+      .reveal section .storytable {
+        margin: 50px 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="assets/hashlabs.jpg">
+          <img width="250" height="250" data-src="assets/hahslabs-logo.png">
+          <h3>Desarrollo de un Sistema de Información Web para la Automatización de Procesos</h3>
+          <h4>Caso Estudio: Hash Labs C.A.</h4>
+          <p>
+            <small>Autor: Carlos Martínez / <a href="http://twitter.com/imcarloseme">@ImCarlosEME</a></small>
+          </p>
+        </section>
+
+        <section data-background="assets/hashlabs.jpg">
+          <h3>Organigrama General de la Empresa</h3>
+          <img data-src="assets/team-diagram.png" style="background: rgba(0,0,0,0.1 );">
+        </section>
+
+        <section data-background="assets/hashlabs.jpg">
+          <h3>Productos y/o Servicios</h3>
+          <div class="justify">
+            <p>
+              Hash Labs C.A., es una empresa del sector de T.I (Tecnologías de Información), se dedica al desarrollo de aplicaciones web y móviles. Ofrecen servicios como creación de blogs, páginas web, tiendas online y aplicaciones móviles. 
+            </p>
+          </div>
+        </section>
+
+        <section data-background="assets/hashlabs.jpg">
+          <h3>Mercado objetivo</h3>
+          <div class="justify">
+            <p>
+              El objetivo principal de Hash Labs C.A. son los emprendedores y empresarios, ya que son las personas que buscan y necesitan el tipo de servicios que desarrolla la empresa. Estos empresarios buscan contratar personas jóvenes que mantengan una visión fresca y desarrollen iniciativas de valor.
+            </p>
+          </div>
+        </section>
+
+         <section data-background="assets/hashlabs.jpg">
+          <section><h2>Planteamiento del problema</h2></section>
+          <section>
+            <h3>La necesidad de la empresa</h3>
+            
+            <div id="necesidad">
+              <img width="400" height="300" data-src="assets/toggl-logo.png" />
+              <img width="400" height="300" data-src="assets/xero-logo.png" />
+            </div>
+          </section>
+          <section data-background-video="assets/togglreports.mp4,video.webm"></section>
+          <section>
+            <h3>La solución</h3>
+            <img width="512" height="390" data-src="assets/bills-logo.png" />
+          </section>
+          <section>
+            <img data-src="assets/bills-dashboard.png" />
+          </section>
+         </section>
+
+         <section data-background="assets/hashlabs.jpg">
+          <section><h2>Objetivos del proyecto</h2></section>
+          <section>
+            <h3>Objetivo General</h3>
+            <p class="justify">
+              Desarrollar un sistema de información mediante el diseño e implementación de una interfaz de usuario que sea ágil, puntual y que funcione en cualquier tipo de dispositivo para la automatización del proceso de registro y generación de facturas de las horas de trabajo que la empresa Hash Labs C.A. invierte en sus proyectos.
+            </p>
+          </section>
+          <section>
+            <h3>Objetivos Específicos</h3>
+            <ul>
+              <li class="justify-li">Realizar un análisis de los requerimientos actuales de la empresa mediante la creación de las historias de usuario a fin de llevar control del plan de trabajo en el que se realizará el sistema de información.</li>
+              <li class="justify-li">Diseñar el esquema de los modelos de base de datos y las interfaces de usuario para la obtención de la estructura base del sistema de información.</li>
+              <li class="justify-li">Desarrollar el sistema de información y su base de datos junto con pruebas unitarias y de funcionalidad con el fin de que se garantice su correcto funcionamiento.</li>
+            </ul>
+          </section>
+         </section>
+
+        <section data-background="assets/hashlabs.jpg">
+          <section><h2>Resultados</h2></section>
+          <section>
+            <h2>Fase I</h2>
+            <h4>Análisis de los requerimientos de la empresa.</h4>
+          </section>
+          <section>
+            <h2>Actividad I</h2>
+            <h4>Análisis de los problemas del diseño de Bills</h4>
+          </section>
+          <section>
+            <h3>Problemas que presenta el diseño</h3>
+
+            <ul>
+              <li>Demasiadas opciones que confunden a los usuarios</li>
+              <li>Los menús de navegación causan problemas con mucha data</li>
+              <li>No fue diseñado como un Software como Servicio</li>
+              <li>No existe la opción para agregar impuestos a las facturas</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Actividad II</h2>
+            <h4>Recolección de los requerimientos funcionales de la empresa</h4>
+          </section>
+          <section>
+            <h3>Funcionalidad que la empresa requiere</h3>
+
+            <ul>
+              <li>Registro y autenticación de usuarios</li>
+              <li>Todo en base a una compañia</li>
+              <li>Gestión de horas de trabajo</li>
+              <li>Generación de facturas a los clientes</li>
+              <li>Soporte para zonas horarias</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Actividad III</h2>
+            <h4>Diseño de las historias de usuario</h4>
+          </section>
+          <section>
+            <h3>Plantilla para las historias de usuario</h3>
+
+            <div class="storytable">
+              <table>
+            <thead>
+              <tr>
+                <th>Plantilla</th>
+                <th>Describe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>As a [usuario]</td>
+                <td>¿Quién?</td>
+              </tr>
+              <tr>
+                <td>I want to [requerimiento]</td>
+                <td>¿Qué?</td>
+              </tr>
+              <tr>
+                <td>So that [necesidad]</td>
+                <td>¿Por qué?</td>
+              </tr>
+            </tbody>
+          </table>
+            </div>
+
+          <h4>As a <span class="highlight">User</span>, I want to <span class="highlight">be able to invite users to my company</span> so that <span class="highlight">I can share the company's projects with my coworkers</span></h4>
+          </section>
+          <section>
+            <h3>Trello Board</h3>
+            <img width="850" height="550" data-src="assets/trelloboard.png" />
+          </section>
+          <section>
+            <h2>Fase II </h2>
+            <h4>Diseño del sistema de información web.</h4>
+          </section>
+          <section>
+            <h2>Actividad I</h2>
+            <h4>Diseño de la base de datos</h4>
+          </section>
+          <section>
+            <h3>Tablas para Bills</h3>
+
+            <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Company</td>
+                <td>Una empresa o compañía</td>
+              </tr>
+              <tr>
+                <td>User</td>
+                <td>Un usuario dentro de una compañía</td>
+              </tr>
+              <tr>
+                <td>Project</td>
+                <td>Un projecto dentro de una compañía</td>
+              </tr>
+              <tr>
+                <td>Invoice</td>
+                <td>Una factura para algún cliente</td>
+              </tr>
+              <tr>
+                <td>InvoiceItem</td>
+                <td>Un item dentro de una factura</td>
+              </tr>
+              <tr>
+                <td>TimeEntry</td>
+                <td>Un registro de tiempo de trabajo</td>
+              </tr>
+            </tbody>
+          </table>
+          </section>
+          <section>
+            <h2>Actividad II</h2>
+            <h4>Diseño de las interfaces de usuario</h4>
+          </section>
+          <section>
+            <img width="1400" height="650" data-src="assets/Timer.png" />
+          </section>
+          <section>
+            <img width="1400" height="650" data-src="assets/bills_login.jpg" />
+          </section>
+          <section>
+            <h2>Fase III </h2>
+            <h4>Desarrollo e implementación de la aplicación.</h4>
+          </section>
+          <section>
+            <h2>Actividad I</h2>
+            <h4>Creación de la base de datos</h4>
+          </section>
+          <section>
+          <h4>Migración en Ruby on Rails</h4>
+          <pre><code class="hljs" data-trim contenteditable>
+class CreateTimeEntries < ActiveRecord::Migration
+  def change
+    create_table :time_entries, id: :uuid do |t|
+      t.string :description
+      t.tsrange :time
+      t.uuid :project_id
+      t.uuid :user_id
+
+      t.timestamps null: false
+    end
+  end
+end
+          </code></pre>
+          </section>
+          <section>
+            <h2>Actividad II</h2>
+            <h4>Implementación del código para acceder a la base de datos</h4>
+          </section>
+          <section>
+          <h4>Clase TimeEntry en Ruby on Rails</h4>
+          <pre><code class="hljs" data-trim contenteditable>
+class TimeEntry < ActiveRecord::Base
+  belongs_to :project
+  belongs_to :user
+
+  validates :description, presence: true
+  validates :project_id, presence: true
+  validates :time, presence: true
+
+  scope :order_latest, -> { order(created_at: :desc) }
+  scope :include_projects, -> { includes(:project) }
+
+  def duration_sec
+    (self.time.end - self.time.begin).to_i
+  end
+
+  def duration_hours
+    (duration_sec.to_f / 60) / 60
+  end
+  
+  # more methods
+end
+          </code></pre>
+          </section>
+          <section>
+            <h2>Actividad III</h2>
+            <h4>Implementación de las interfaces de usuario</h4>
+          </section>
+          <section data-background-video="assets/bills-bill.mp4,video.webm"></section>
+          <section data-background-video="assets/bills-timer.mp4,video.webm"></section>
+          <section data-background-video="assets/bills-chart.mp4,video.webm"></section>
+          <section>
+            <h2>Actividad IV</h2>
+            <h4>Implementación de las pruebas del sistema</h4>
+          </section>
+          <section>
+            <h4>Banco de pruebas de integración</h4>
+            <img width="1000" height="426" data-src="assets/integration-test-suite.png" />
+          </section>
+          <section>
+            <h4>Banco de pruebas unitarias Jasmine</h4>
+            <img width="686" height="719" data-src="assets/jasmine_suite.png" />
+          </section>
+        </section>
+
+         <section data-background="assets/hashlabs.jpg">
+            <section><h2>Recomendaciones a la empresa</h2></section>
+            <section>
+              <h3>Las historias de usuario no definen la funcionalidad a implementar</h3>
+
+              <img width="250" height="250" data-src="assets/wat.gif" />
+            </section>
+            <section>
+              <h3>Incluir a todo el equipo en los sprints semanales</h3>
+            </section>
+            <section>
+              <h3>Definir mejor las limitaciones del proyecto</h3>
+              <img width="300" height="300" data-src="assets/deadline.jpg" />
+            </section> 
+         </section>
+
+         <section data-background="assets/hashlabs.jpg">
+          <h3>Conclusiones</h3>
+         </section>
+
+         <section data-background="assets/hashlabs.jpg">
+           <blockquote>
+             "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."
+             Albert Schweitzer
+           </blockquote>
+         </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
